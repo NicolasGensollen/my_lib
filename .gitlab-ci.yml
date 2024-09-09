@@ -1,0 +1,9 @@
+image: python:latest
+
+test:
+  script:
+    - pip install pipx
+    - pipx ensurepath
+    - source ~/.bashrc
+    - pipx install hatch
+    - hatch run test:cov
