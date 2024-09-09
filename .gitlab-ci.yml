@@ -1,9 +1,12 @@
-image: python:latest
-
 test:
+  image: "python:$VERSION"
   script:
+    - python -V
     - pip install pipx
     - pipx ensurepath
     - source ~/.bashrc
     - pipx install hatch
-    - hatch run test:cov
+    - hatch run +py=$VERSION test:cov
+  parallel:
+    matrix:
+      - VERSION: ["3.9", "3.10", "3.11", "3.12"]
