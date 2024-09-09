@@ -21,6 +21,9 @@ extra-args = ["-vv"]
 randomize = true
 parallel = true
 
+[[envs.test.matrix]]
+python = ["3.9", "3.10", "3.11", "3.12"]
+
 [envs.test.scripts]
 unit = "pytest tests/unittests"
 integration = "pytest tests/integration"
