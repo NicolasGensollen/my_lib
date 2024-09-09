@@ -1,2 +1,3 @@
-def hello() -> str:
-    return "Hello from my-lib!"
+from ._add import add
+
+__all__ = ["add"]
