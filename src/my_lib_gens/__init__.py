@@ -1,5 +1,5 @@
-from my_lib._add import add
-from my_lib._sub import sub
+from my_lib_gens._add import add
+from my_lib_gens._sub import sub
 
 __version__ = "0.0.1"
 

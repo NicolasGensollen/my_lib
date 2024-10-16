@@ -1,5 +1,5 @@
 [project]
-name = "my-lib-gens"
+name = "my_lib_gens"
 dynamic = ["version"]
 description = "Useless library to perform basic computations"
 readme = "README.md"
@@ -42,4 +42,4 @@ preview = true
 extend-select = ["C901"]
 
 [tool.ruff.lint.isort]
-known-first-party = ["my_lib"]
+known-first-party = ["my_lib_gens"]
