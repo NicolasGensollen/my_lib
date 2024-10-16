@@ -1,5 +1,5 @@
 [version]
-path = "src/my_lib/__init__.py"
+path = "src/my_lib_gens/__init__.py"
 
 [build.targets.sdist]
 exclude = [
@@ -9,7 +9,7 @@ exclude = [
 ]
 
 [build.targets.wheel]
-packages = ["src/my_lib"]
+packages = ["src/my_lib_gens"]
 
 [envs.test]
 dependencies = [

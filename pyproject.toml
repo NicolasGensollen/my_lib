@@ -1,5 +1,5 @@
 [project]
-name = "my-lib"
+name = "my-lib-gens"
 dynamic = ["version"]
 description = "Useless library to perform basic computations"
 readme = "README.md"
