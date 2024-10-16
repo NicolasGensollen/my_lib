@@ -12,7 +12,7 @@ import pytest
     ]
 )
 def test_add(first, second, expected):
-    from my_lib import add
+    from my_lib_gens import add
 
     assert add(first, second) == expected
 
