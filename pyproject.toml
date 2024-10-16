@@ -21,6 +21,11 @@ dev = [
   "black",
 ]
 
+docs = [
+  "sphinx",
+  "sphinx-autoapi",
+]
+
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"

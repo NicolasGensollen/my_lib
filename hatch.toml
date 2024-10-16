@@ -39,10 +39,6 @@ cov = [
 ]
 
 [envs.docs]
-dependencies = [
-  "sphinx",
-  "sphinx-autoapi",
-]
 python = "3.12"
 
 [envs.docs.scripts]
