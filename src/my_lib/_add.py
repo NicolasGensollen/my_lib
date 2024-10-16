@@ -1,3 +1,5 @@
+"""Addition module."""
+
 __all__ = ["add"]
 
 

@@ -41,8 +41,9 @@ cov = [
 [envs.docs]
 dependencies = [
   "sphinx",
+  "sphinx-autoapi",
 ]
 python = "3.12"
 
 [envs.docs.scripts]
-build = "sphinx-build -M html docs docs/_build"
+build = "sphinx-build -b html docs docs/_build"
