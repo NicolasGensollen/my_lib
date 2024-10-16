@@ -37,3 +37,12 @@ cov = [
   "cov-test",
   "cov-report",
 ]
+
+[envs.docs]
+dependencies = [
+  "sphinx",
+]
+python = "3.12"
+
+[envs.docs.scripts]
+build = "sphinx-build -M html docs docs/_build"
