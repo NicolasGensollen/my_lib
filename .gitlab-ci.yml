@@ -24,7 +24,6 @@ docs-build:
 release-pypi:
   rules:
     - if '$CI_COMMI_TAG'
-  image: "python:3.12"
   script:
     - python -V
     - pip install pipx
