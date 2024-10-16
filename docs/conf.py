@@ -17,15 +17,23 @@ release = '0.0.1'
 extensions = [
     "autoapi.extension",
 ]
-
-autoapi_dirs = ['../src']
 templates_path = ['_templates']
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
+# -- autoapi configuration ---------------------------------------------------
+# https://sphinx-autoapi.readthedocs.io/en/latest/reference/config.html
 
+autoapi_dirs = ['../src']
 
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
-html_theme = 'alabaster'
+html_theme = "sphinx_book_theme"
+html_theme_options = {
+    "path_to_docs": "docs",
+    "repository_url": "https://gitlab.com/NicolasGensollen/my_lib",
+    "repository_branch": "main",
+    "navigation_with_keys": False,
+}
+html_title = "my lib documentation"
 html_static_path = ['_static']

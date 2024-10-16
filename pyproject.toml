@@ -24,6 +24,8 @@ dev = [
 docs = [
   "sphinx",
   "sphinx-autoapi",
+  "sphinx-book-theme",
+  "sphinx-autobuild",
 ]
 
 [build-system]

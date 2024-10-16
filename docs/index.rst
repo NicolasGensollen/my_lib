@@ -6,6 +6,8 @@
 MyLib documentation
 ===================
 
+This is the documentation of the Python project MyLib.
+
 Add your content using ``reStructuredText`` syntax. See the
 `reStructuredText <https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html>`_
 documentation for details.
