@@ -22,6 +22,7 @@ dev = [
 ]
 
 docs = [
+  "myst-nb",
   "sphinx",
   "sphinx-autoapi",
   "sphinx-book-theme",

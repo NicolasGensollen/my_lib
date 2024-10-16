@@ -16,6 +16,7 @@ release = '0.0.1'
 
 extensions = [
     "autoapi.extension",
+    "myst_nb",
 ]
 templates_path = ['_templates']
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
@@ -24,6 +25,7 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 # https://sphinx-autoapi.readthedocs.io/en/latest/reference/config.html
 
 autoapi_dirs = ['../src']
+autoapi_root = "reference/api"
 
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
