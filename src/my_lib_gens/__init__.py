@@ -3,6 +3,6 @@ from my_lib_gens._sub import sub
 from my_lib_gens._multiply import mult
 from my_lib_gens._divide import div
 
-__version__ = "0.0.2"
+__version__ = "0.0.3"
 
 __all__ = ["add", "sub", "mult", "div"]
