@@ -3,6 +3,7 @@ test:
   script:
     - python -V
     - pip install pipx
+    - echo $PYPI_TOKEN
     - pipx ensurepath
     - source ~/.bashrc
     - pipx install hatch
