@@ -22,6 +22,15 @@ hello-world:
     - python -V
     - echo "Hello World"
 
+hello-tag:
+  image: "python:3.12"
+  rules:
+    - if: $CI_COMMIT_TAG
+      when: always
+  script:
+    - python -V
+    - echo "Hello Tag"
+
 docs-build:
   image: "python:3.12"
   script:
