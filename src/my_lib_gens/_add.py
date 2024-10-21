@@ -1,4 +1,7 @@
-"""Addition module."""
+"""Addition module.
+
+This module contains addition logic.
+"""
 
 __all__ = ["add"]
 
