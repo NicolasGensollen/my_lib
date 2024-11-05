@@ -6,10 +6,14 @@ test:
     - pipx ensurepath
     - source ~/.bashrc
     - pipx install hatch
-    - hatch run +py=$VERSION test:cov
+    - hatch run +py=$VERSION test:cov --junitxml=report.xml
   parallel:
     matrix:
       - VERSION: ["3.9", "3.10", "3.11", "3.12"]
+  artifacts:
+    when: always
+    reports:
+      junit: report.xml
 
 docs-build:
   image: "python:3.12"
