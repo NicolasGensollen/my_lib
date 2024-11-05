@@ -9,6 +9,7 @@ import pytest
         (1, 1, 2),
         (2, 3, 5),
         (1, -1, 0),
+        (0, 10, 0),
     ]
 )
 def test_add(first, second, expected):
